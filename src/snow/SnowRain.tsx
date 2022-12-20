@@ -7,6 +7,7 @@ import {
 	useVideoConfig,
 	useCurrentFrame,
 	interpolate,
+	Audio,
 } from 'remotion';
 import SvgSnowFlake from './SvgSnowFlake';
 import './SnowRain.css';
@@ -71,6 +72,12 @@ const SnowRain: React.FC<{title: string}> = ({title}) => {
 			</AbsoluteFill>
 			<AbsoluteFill>
 				<Title title={title} opacity={opacity} />
+			</AbsoluteFill>
+			<AbsoluteFill>
+				<Audio
+					loop
+					src={staticFile('494179__phantastonia__xmas-bellis4.wav')}
+				/>
 			</AbsoluteFill>
 		</AbsoluteFill>
 	);
